@@ -1,0 +1,500 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* todo_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-10 10:12+0000\n"
+"PO-Revision-Date: 2026-06-10 10:12+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__message_needaction
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__active
+msgid "Active"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__activity_ids
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__activity_exception_decoration
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__activity_state
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__activity_type_icon
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.ui.menu,name:todo_management.all_task_menu_item
+msgid "All Tasks"
+msgstr "كل المهام"
+
+#. module: todo_management
+#: model_terms:ir.ui.view,arch_db:todo_management.task_assignment_wizard_form
+msgid "Assign"
+msgstr "تعيين"
+
+#. module: todo_management
+#: model:ir.actions.server,name:todo_management.todo_task_assign_server_action
+#: model_terms:ir.ui.view,arch_db:todo_management.task_assignment_wizard_form
+msgid "Assign Tasks"
+msgstr "تعيين المهام"
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_task_assignment_wizard__assigned_to
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__assigned_to
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_view_search
+msgid "Assigned To"
+msgstr "مُسند إلى"
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__message_attachment_count
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: todo_management
+#: model_terms:ir.ui.view,arch_db:todo_management.task_assignment_wizard_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: todo_management
+#: model:ir.actions.server,name:todo_management.todo_task_closed_server_action
+#: model:ir.model.fields.selection,name:todo_management.selection__todo_task__state__closed
+msgid "Closed"
+msgstr "مغلق"
+
+#. module: todo_management
+#: model:ir.model.fields.selection,name:todo_management.selection__todo_task__state__completed
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_view_search
+msgid "Completed"
+msgstr "مكتمل"
+
+#. module: todo_management
+#: model_terms:ir.actions.act_window,help:todo_management.todo_task_action
+msgid "Create new document"
+msgstr "إنشاء سجل جديد"
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_task_assignment_wizard__create_uid
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__create_uid
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_task_assignment_wizard__create_date
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__create_date
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__date
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__description
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__description
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+msgid "Description"
+msgstr "الوصف"
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_task_assignment_wizard__display_name
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__display_name
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: todo_management
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_view_form
+msgid "Done"
+msgstr "إنهاء"
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__due_date
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_view_search
+msgid "Due Date"
+msgstr "تاريخ الاستحقاق"
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__estimated_time
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+msgid "Estimated Time"
+msgstr "الوقت المتوقع"
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__message_follower_ids
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__message_partner_ids
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,help:todo_management.field_time_sheet__activity_type_icon
+#: model:ir.model.fields,help:todo_management.field_todo_task__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: todo_management
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+msgid "Generated From Todo Management System"
+msgstr ""
+
+#. module: todo_management
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_view_search
+msgid "Group By"
+msgstr "تجميع حسب"
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__has_message
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__hours
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+msgid "Hours"
+msgstr "الساعات"
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_task_assignment_wizard__id
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__id
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__id
+msgid "ID"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__activity_exception_icon
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,help:todo_management.field_time_sheet__activity_exception_icon
+#: model:ir.model.fields,help:todo_management.field_todo_task__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,help:todo_management.field_time_sheet__message_needaction
+#: model:ir.model.fields,help:todo_management.field_todo_task__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,help:todo_management.field_time_sheet__message_has_error
+#: model:ir.model.fields,help:todo_management.field_todo_task__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields.selection,name:todo_management.selection__todo_task__state__in_progress
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_view_search
+msgid "In Progress"
+msgstr "قيد التنفيذ"
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__message_is_follower
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__is_late
+msgid "Is Late"
+msgstr "متأخر"
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_task_assignment_wizard__write_uid
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__write_uid
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_task_assignment_wizard__write_date
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__write_date
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__message_has_error
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__message_ids
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__my_activity_date_deadline
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: todo_management
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_view_search
+msgid "My Tasks"
+msgstr "مهامي"
+
+#. module: todo_management
+#: model:ir.model.fields.selection,name:todo_management.selection__todo_task__state__new
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_view_search
+msgid "New"
+msgstr "جديد"
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__activity_date_deadline
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__activity_summary
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__activity_type_id
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: todo_management
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+msgid "No Timesheet Records Found"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__message_needaction_counter
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__message_has_error_counter
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,help:todo_management.field_time_sheet__message_needaction_counter
+#: model:ir.model.fields,help:todo_management.field_todo_task__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,help:todo_management.field_time_sheet__message_has_error_counter
+#: model:ir.model.fields,help:todo_management.field_todo_task__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: todo_management
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+msgid "Printed By:"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__rating_ids
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__rating_ids
+msgid "Ratings"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__ref
+msgid "Ref"
+msgstr "المرجع"
+
+#. module: todo_management
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_view_form
+msgid "Reset"
+msgstr "إعادة تعيين"
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__activity_user_id
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: todo_management
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_view_form
+msgid "Start"
+msgstr "بدء"
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: todo_management
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_view_search
+msgid "Status"
+msgstr "الحالة"
+
+#. module: todo_management
+#: model:ir.model.fields,help:todo_management.field_time_sheet__activity_state
+#: model:ir.model.fields,help:todo_management.field_todo_task__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_time_sheet__task_id
+msgid "Task"
+msgstr "المهمة"
+
+#. module: todo_management
+#: model:ir.actions.act_window,name:todo_management.task_assignment_wizard_action
+msgid "Task Assignment"
+msgstr "تعيين المهام"
+
+#. module: todo_management
+#: model:ir.model,name:todo_management.model_task_assignment_wizard
+msgid "Task Assignment Wizard"
+msgstr "معالج تعيين المهام"
+
+#. module: todo_management
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+msgid "Task Description"
+msgstr "وصف المهمة"
+
+#. module: todo_management
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+msgid "Task Information"
+msgstr "بيانات المهمة"
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__name
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+msgid "Task Name"
+msgstr "اسم المهمة"
+
+#. module: todo_management
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+msgid "Task Summary &amp; Timesheet Details"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.constraint,message:todo_management.constraint_todo_task_unique_name
+msgid "This name is exist!"
+msgstr "هذا الاسم موجود بالفعل"
+
+#. module: todo_management
+#: model:ir.actions.act_window,name:todo_management.time_sheet_action
+#: model:ir.model,name:todo_management.model_time_sheet
+msgid "Time Sheet"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.ui.menu,name:todo_management.time_sheet_menu_item
+msgid "Time Sheets"
+msgstr "سجل الوقت"
+
+#. module: todo_management
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+msgid "Timesheet Details"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__timesheet_ids
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_view_form
+msgid "Timesheets"
+msgstr "سجلات الوقت"
+
+#. module: todo_management
+#: model:ir.ui.menu,name:todo_management.todo_menu
+msgid "To Do"
+msgstr "المهام"
+
+#. module: todo_management
+#: model:ir.ui.menu,name:todo_management.todo_root_menu
+msgid "To-Do"
+msgstr "إدارة المهام"
+
+#. module: todo_management
+#: model:ir.model,name:todo_management.model_todo_task
+msgid "Todo App"
+msgstr "تطبيق إدارة المهام"
+
+#. module: todo_management
+#: model:ir.actions.report,name:todo_management.action_todo_task_report
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+msgid "Todo Task Report"
+msgstr "تقرير المهام"
+
+#. module: todo_management
+#: model:ir.actions.server,name:todo_management._check_late_tasks_cron_ir_actions_server
+msgid "Todo Task: Check task date"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.actions.act_window,name:todo_management.todo_task_action
+msgid "Todo Tasks"
+msgstr "المهام"
+
+#. module: todo_management
+#: model:ir.model.fields,field_description:todo_management.field_todo_task__total_hours
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+msgid "Total Hours"
+msgstr "إجمالي الساعات"
+
+#. module: todo_management
+#: model_terms:ir.ui.view,arch_db:todo_management.todo_task_report_template
+msgid "Total Logged Hours :"
+msgstr ""
+
+#. module: todo_management
+#: model:ir.model.fields,help:todo_management.field_time_sheet__activity_exception_decoration
+#: model:ir.model.fields,help:todo_management.field_todo_task__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""

@@ -1,0 +1,62 @@
+<odoo>
+    <!-- Tree View -->
+    <record id="time_sheet_view_tree" model="ir.ui.view">
+        <field name="name">time sheet tree</field>
+        <field name="model">time.sheet</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="date"/>
+                <field name="task_id"/>
+                <field name="hours"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="time_sheet_view_form" model="ir.ui.view">
+        <field name="name">time.sheet.form</field>
+        <field name="model">time.sheet</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="date"/>
+                        <field name="hours"/>
+                        <field name="task_id"/>
+                    </group>
+                    <group>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="time_sheet_view_search" model="ir.ui.view">
+        <field name="name">time.sheet.search</field>
+        <field name="model">time.sheet</field>
+        <field name="arch" type="xml">
+            <search>
+                <!-- Search Fields -->
+                <field name="date"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="time_sheet_action" model="ir.actions.act_window">   
+        <field name="name">Time Sheets</field>
+        <field name="res_model">time.sheet</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="time_sheet_view_search"/>
+    </record>
+
+    <menuitem
+        id="time_sheet_menu_item"
+        name="Time Sheets"
+        parent="todo_root_menu"
+        action="time_sheet_action"
+    />
+</odoo>

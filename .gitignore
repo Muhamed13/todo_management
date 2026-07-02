@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Odoo
+*.log
+*.pot
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# PostgreSQL Dumps
+*.sql
+*.dump
+
+# Temporary Files
+*.tmp
+*.bak

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Report Action -->
+    <record id="action_todo_task_report" model="ir.actions.report">
+        <field name="name">Todo Task Report</field>
+        <field name="model">todo.task</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">todo_management.todo_task_report_template</field>
+        <field name="report_file">todo_management.todo_task_report_template</field>
+        <field name="binding_model_id" ref="model_todo_task"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <!-- Report Template -->
+    <template id="todo_task_report_template">
+
+        <t t-call="web.html_container">
+
+            <t t-foreach="docs" t-as="o">
+
+                <t t-call="web.external_layout">
+
+                    <div class="page">
+
+                        <!-- Report Styling -->
+                        <style>
+                            .report-title {
+                                text-align: center;
+                                font-size: 26px;
+                                font-weight: bold;
+                                color: #875A7B;
+                                margin-bottom: 5px;
+                            }
+
+                            .report-subtitle {
+                                text-align: center;
+                                color: #666;
+                                margin-bottom: 20px;
+                            }
+
+                            .section-title {
+                                background: #875A7B;
+                                color: white;
+                                padding: 8px;
+                                font-weight: bold;
+                                margin-top: 15px;
+                            }
+
+                            .summary-table,
+                            .timesheet-table {
+                                width: 100%;
+                                border-collapse: collapse;
+                            }
+
+                            .summary-table td,
+                            .timesheet-table td,
+                            .timesheet-table th {
+                                border: 1px solid #ddd;
+                                padding: 8px;
+                            }
+
+                            .timesheet-table th {
+                                background: #875A7B;
+                                color: white;
+                            }
+
+                            .label {
+                                background: #f4f4f4;
+                                font-weight: bold;
+                                width: 25%;
+                            }
+
+                            .description-box {
+                                border: 1px solid #ddd;
+                                padding: 10px;
+                                min-height: 60px;
+                            }
+
+                            .total-box {
+                                margin-top: 15px;
+                                padding: 10px;
+                                border: 1px solid #ddd;
+                                background: #f8f8f8;
+                                text-align: right;
+                                font-weight: bold;
+                            }
+
+                            .footer-note {
+                                margin-top: 20px;
+                                text-align: center;
+                                color: #777;
+                                font-size: 11px;
+                            }
+
+                            .badge-new {
+                                color: #3498db;
+                                font-weight: bold;
+                            }
+
+                            .badge-progress {
+                                color: #f39c12;
+                                font-weight: bold;
+                            }
+
+                            .badge-done {
+                                color: #27ae60;
+                                font-weight: bold;
+                            }
+                        </style>
+
+                        <!-- Report Header -->
+                        <div class="report-title">
+                            Todo Task Report
+                        </div>
+
+                        <div class="report-subtitle">
+                            Task Summary &amp; Timesheet Details
+                        </div>
+
+                        <div style="text-align:right; margin-bottom:15px;">
+                            Printed By:
+                            <span t-esc="user.name"/>
+                        </div>
+
+                        <!-- Task Information -->
+                        <div class="section-title">
+                            Task Information
+                        </div>
+
+                        <table class="summary-table">
+
+                            <tr>
+                                <td class="label">Task Name</td>
+                                <td>
+                                    <span t-field="o.name"/>
+                                </td>
+
+                                <td class="label">Assigned To</td>
+                                <td>
+                                    <span t-field="o.assigned_to"/>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="label">Due Date</td>
+                                <td>
+                                    <span t-field="o.due_date"/>
+                                </td>
+
+                                <td class="label">Status</td>
+                                <td>
+
+                                    <span
+                                        t-if="o.state == 'new'"
+                                        class="badge-new">
+                                        New
+                                    </span>
+
+                                    <span
+                                        t-if="o.state == 'in_progress'"
+                                        class="badge-progress">
+                                        In Progress
+                                    </span>
+
+                                    <span
+                                        t-if="o.state == 'completed'"
+                                        class="badge-done">
+                                        Completed
+                                    </span>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="label">Estimated Time</td>
+                                <td>
+                                    <span t-field="o.estimated_time"/>
+                                </td>
+
+                                <td class="label">Total Hours</td>
+                                <td>
+                                    <span t-field="o.total_hours"/>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- Task Description -->
+                        <div class="section-title">
+                            Task Description
+                        </div>
+
+                        <div class="description-box">
+                            <span t-field="o.description"/>
+                        </div>
+
+                        <!-- Timesheet Details -->
+                        <div class="section-title">
+                            Timesheet Details
+                        </div>
+
+                        <table class="timesheet-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Description</th>
+                                    <th>Hours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-if="o.timesheet_ids">
+                                    <tr t-foreach="o.timesheet_ids" t-as="line">
+                                        <td>
+                                            <span t-field="line.date"/>
+                                        </td>
+
+                                        <td>
+                                            <span t-field="line.description"/>
+                                        </td>
+
+                                        <td>
+                                            <span t-field="line.hours"/>
+                                        </td>
+                                    </tr>
+                                </t>
+
+                                <t t-if="not o.timesheet_ids">
+                                    <tr>
+                                        <td colspan="3">
+                                            No Timesheet Records Found
+                                        </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+
+                        <!-- Total Hours -->
+                        <div class="total-box">
+                            Total Logged Hours :
+                            <span t-field="o.total_hours"/>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="footer-note">
+                            Generated From Todo Management System
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+    
+</odoo>

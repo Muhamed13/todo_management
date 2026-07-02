@@ -1,0 +1,31 @@
+<odoo>
+
+    <!-- Category -->
+    <record id="todo_task_category" model="ir.module.category">
+        <field name="name">Todo Management</field>
+    </record>
+
+    <!-- Users Group -->
+    <record id="users_group" model="res.groups">
+        <field name="name">Users</field>
+        <field name="category_id" ref="todo_management.todo_task_category"/>
+    </record>
+
+    <!-- Managers Group -->
+    <record id="managers_group" model="res.groups">
+        <field name="name">Managers</field>
+        <field name="category_id" ref="todo_management.todo_task_category"/>
+    </record>
+
+    <!-- Users can only see their own tasks -->
+    <record id="todo_task_user_rule" model="ir.rule">
+        <field name="name">User Own Tasks</field>
+        <field name="model_id" ref="model_todo_task"/>
+        <field name="groups"
+               eval="[(4, ref('todo_management.users_group'))]"/>
+        <field name="domain_force">
+            [('assigned_to', '=', user.id)]
+        </field>
+    </record>
+
+</odoo>
