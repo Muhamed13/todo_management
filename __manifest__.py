@@ -28,7 +28,7 @@ Features:
         'security/security.xml',
         'security/ir.model.access.csv',
 
-        'data/patient_sequence.xml',
+        'data/sequence.xml',
 
         'views/base_menu.xml',
         'views/todo_task_view.xml',
@@ -36,7 +36,7 @@ Features:
 
         'wizard/assignment_wizard_view.xml',
 
-        'reports/appointment_report.xml',
+        'reports/todo_task_report.xml',
     ],
 
     'application': True,
